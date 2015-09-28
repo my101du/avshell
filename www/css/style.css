@@ -1,0 +1,29 @@
+body, .item, #thread-detail {
+	background-color: #F9F9EC;
+}
+
+.item-divider {
+	background-color: #B1D3E0;
+}
+
+#thread-detail img, #thread-detail input {
+	max-width: 100%;
+}
+
+
+#forum-list a, #thread-list a, #pages a, #filters a {
+	text-decoration: none;
+	color: #000;
+}
+
+#pages {
+	text-align: right;
+}
+
+#pages a, #filters a {
+	color: #000;
+/*	border:1px solid #000;*/
+	background-color: #eee;
+	margin-left: 5px;
+	padding:1px;
+}

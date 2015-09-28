@@ -1,0 +1,12 @@
+<ion-view view-title="收藏">
+
+  <ion-content style="">
+
+    <div id="collect-thread-list" class="list">
+        <a class="item item-text-wrap" ng-repeat="thread in CollectThreadList" ng-click="gotoThreadDetail('{{thread.link}}','{{thread.title}}');" href="#/tab/threadDetail">
+          <p>{{thread.title}}</p>
+        </a>
+    </div>
+
+  </ion-content>
+</ion-view>

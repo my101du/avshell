@@ -1,0 +1,12 @@
+<ion-view view-title="所有版块">
+  <ion-content class="">
+    <div id="forum-list" class="list">
+      <a class="item item-text-wrap {{forum.isItemDivider}}" ng-repeat="forum in forumList" ng-click="gotoThreadList('{{baseUrl}}/{{forum.url}}','{{forum.title}}');" href="#/tab/threadList">
+      	<h2>{{forum.title}}</h2>
+      	<p>{{forum.description}}</p>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
+<!-- <li class="item item-divider">BT電影下載</li> -->
+<!-- <li class="item item-divider">草榴休閑區</li> -->

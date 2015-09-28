@@ -1,0 +1,29 @@
+<ion-view view-title="{{forumTitle}}">
+
+  <div class="bar bar-subheader" id="filters">
+    <a ng-repeat="filter in filters" ng-click="gotoThreadListPage('{{filter.filter_link}}','{{filter.filter_html}}');" href="#/tab/threadList">{{filter.filter_html}}</a>
+  </div>
+
+  <ion-content style="margin-top:40px;margin-bottom:40px;">
+
+  	<!-- 如果要实现自定义的返回动作(例如本app的中断 ajax)，必须重新添加这段 ion-nav-bar 以覆盖掉 tabs.html 里的导航 -->
+		<!-- <ion-nav-bar>
+		<ion-nav-back-button ng-click="threadListBack()">返回</ion-nav-back-button>
+		</ion-nav-bar> -->
+
+		<a class="item item-divider loading" href="#">
+	    加载中，请稍后……
+	  </a>
+    <div id="thread-list" class="list">
+      	<a class="item item-text-wrap" ng-repeat="thread in threadList" ng-click="gotoThreadDetail('{{thread.link}}','{{thread.title}}');" href="#/tab/threadDetail">
+          <p>{{thread.title}}</p>
+        </a>
+    </div>
+
+  </ion-content>
+
+
+  <div class="bar bar-footer" id="pages">
+    <a ng-repeat="page in pages" ng-click="gotoThreadListPage('{{page.page_link}}','{{page.page_html}}');" href="#/tab/threadList">{{page.page_html}}</a>
+  </div>
+</ion-view>
