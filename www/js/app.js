@@ -1,5 +1,5 @@
 window.devicemode = 'browser'; //app
-window.baseurl = 'http://cl.dzcl.pw';
+window.baseurl = 'http://www.t66y.com';
 window.threadListUrl = '/thread0806.php?fid=7';
 
 // Ionic Starter App
